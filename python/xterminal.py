@@ -1,11 +1,10 @@
 from tkinter import *
-from tkterminal import Terminal
 import os
 
 window = Tk()
 window.title("TEST")
 window.attributes("-topmost",True)
-window.geometry("960x640")
+window.geometry("480x320")
 
 ubuntu = PhotoImage(file = "./ubuntu.png")
 #ubuntu_exec = PhotoImage(file = "./ubuntu_exec.png")
