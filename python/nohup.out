@@ -1,0 +1,32 @@
+Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.49-linuxkit aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Mon Feb  6 19:13:52 2023 from 172.17.0.1
+$ test
+$ ^C
+$ ^C
+$ Welcome to Ubuntu 22.04.1 LTS (GNU/Linux 5.15.49-linuxkit aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Mon Feb  6 19:22:21 2023 from 172.17.0.1
+$ Permission denied, please try again.
+Permission denied, please try again.
+test@localhost: Permission denied (publickey,password).
+Connection to localhost closed by remote host.
+Connection to localhost closed.
+Connection to localhost closed by remote host.
+Connection to localhost closed.

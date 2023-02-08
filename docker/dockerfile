@@ -1,0 +1,25 @@
+# Use the official Ubuntu image as the base image
+FROM ubuntu:20.04
+
+# Update the package list and install the OpenSSH server and install the sudo
+RUN apt-get update && apt-get install -y openssh-server && apt-get install sudo
+
+# Create the SSH directory and set the appropriate permissions
+RUN mkdir /var/run/sshd
+RUN chmod 0755 /var/run/sshd
+
+# Add a user named "test" with the password "test"
+RUN useradd -m test
+RUN echo "test:test" | chpasswd
+
+# Allow password authentication
+RUN sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
+
+# Add sudo access
+RUN usermod -aG sudo test
+
+# Expose the default SSH port
+EXPOSE 22
+
+# Start the SSH service when the container starts
+CMD ["/usr/sbin/sshd", "-D"]
